@@ -13,6 +13,7 @@ print("--- loading AstralSorcery.zs ---");
 	[<ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>]]);
 
 # Astral Sorcery Journal
+	recipes.remove(<astralsorcery:itemjournal>);
 	recipes.addShaped("Astral Sorcery Journal", 
 	<astralsorcery:itemjournal>, 
 	[[<astralsorcery:itemcraftingcomponent:5>, <ore:gemAquamarine>, <astralsorcery:itemcraftingcomponent:5>],
