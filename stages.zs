@@ -8,14 +8,14 @@ var cat = ResearchTable.addCategory(<minecraft:grass>);
 
 //Stages Mods
 mods.recipestages.Recipes.setRecipeStageByMod("Mekanism", "mekanism");
-mods.recipestages.Recipes.setRecipeStageByMod("Thermal Expansion", "thermalexpansion");
-mods.recipestages.Recipes.setRecipeStageByMod("Thermal Dynamics", "thermaldynamics");
-mods.recipestages.Recipes.setRecipeStageByMod("Astral Sorcery", "astralsorcery");
+mods.recipestages.Recipes.setRecipeStageByMod("Thermal_Expansion", "thermalexpansion");
+mods.recipestages.Recipes.setRecipeStageByMod("Thermal_Dynamics", "thermaldynamics");
+mods.recipestages.Recipes.setRecipeStageByMod("Astral_Sorcery", "astralsorcery");
 mods.recipestages.Recipes.setRecipeStageByMod("Thaumcraft", "thaumcraft");
 
 //Stages Recipes
 mods.recipestages.Recipes.setRecipeStage("IC2Fu", <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}));
-mods.recipestages.Recipes.addShaped("IC2 Cable", "Mekanism", <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),[[null, <ore:craftingToolWireCutter>],[null, <ore:plateCopper>]]);
+mods.recipestages.Recipes.addShaped("IC2_Cable", "Mekanism", <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),[[null, <ore:craftingToolWireCutter>],[null, <ore:plateCopper>]]);
 
 
 //Research Table
