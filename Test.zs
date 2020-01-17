@@ -4,25 +4,6 @@ import mods.ResearchTable;
 
 var cat = ResearchTable.addCategory(<minecraft:grass>);
 
-ResearchTable.builder("testResearch1", cat) // The second parameter has no use currently
-  .setIcons(<minecraft:grass>)
-  .setTitle("Alchemy") // I18n support: use language key
-  .setDescription("Input your description")
-  .addCondition(<ore:ingotIron> * 8, <liquid:lava> * 2000)
-  .setRewardStages("stage")
-  .setRewardCommands("/say \"wow, @s has found a gold!\"")
-  .setRewardItems(<minecraft:gold_ingot>, <minecraft:gold_nugget>)
-//.setNoMaxCount()
-  .build();
-
-ResearchTable.builder("testResearch2", cat)
-  .setTitle("Energetic Wool")
-  .setIcons(<minecraft:wool:3>)
-  .addCondition(<minecraft:wool:32767>, 2048, "Any Wool") // language key is better
-  .addEnergyCondition(123456)
-  .setMaxCount(2) // How many times can a player do this research?
-  .build();
-
 ResearchTable.builder("testResearch3", cat)
   .setTitle("Produce Seller")
   .setIcons(<minecraft:bread>)
