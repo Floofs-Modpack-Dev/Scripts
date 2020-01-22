@@ -3,7 +3,7 @@ import mods.ResearchTable;
 print("--- loading Stages.zs ---");
 
 //Table Recipe
-recipes.addShaped(<researchtable:table>, [[<ore:ingotIron>, <minecraft:book>, <ore:gearWood>], [<ore:ingotIron>, <minecraft:crafting_table>, <ore:chest>], [<ore:ingotIron>, <minecraft:book>, <ore:gearWood>]]);
+recipes.addShaped(<researchtable:table>, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>], [<minecraft:book>, <minecraft:crafting_table>, <minecraft:book>], [<ore:gearWood>, <ore:chest>, <ore:gearWood>]]);
 
 //Variables
 var cat = ResearchTable.addCategory(<minecraft:grass>);
