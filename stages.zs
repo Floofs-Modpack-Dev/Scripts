@@ -16,6 +16,20 @@ mods.recipestages.Recipes.setRecipeStageByMod("Thermal_Dynamics", "thermaldynami
 mods.recipestages.Recipes.setRecipeStageByMod("Astral_Sorcery", "astralsorcery");
 mods.recipestages.Recipes.setRecipeStageByMod("Thaumcraft", "thaumcraft");
 
+//GT Stages <gregtech:machine_casing:11>
+mods.recipestages.Recipes.setRecipeStage("GT_Stage_Bronze_Steam", "gregtech:machine_casing:10" );
+mods.recipestages.Recipes.setRecipeStage("GT_Stage_Bronze_Steam", "gregtech:machine_casing:11" );
+mods.recipestages.Recipes.setRecipeStage("GT_Stage_Steel_Steam", "gregtech:machine_casing:12" );
+mods.recipestages.Recipes.setRecipeStage("GT_Stage_Steel_Steam", "gregtech:machine_casing:13" );
+mods.recipestages.Recipes.setRecipeStage("GT_Stage_LV", "gregtech:machine:501" );
+mods.recipestages.Recipes.setRecipeStage("GT_Stage_MV", "gregtech:machine:502" );
+mods.recipestages.Recipes.setRecipeStage("GT_Stage_HV", "gregtech:machine:503" );
+mods.recipestages.Recipes.setRecipeStage("GT_Stage_EV", "gregtech:machine:504" );
+mods.recipestages.Recipes.setRecipeStage("GT_Stage_IV", "gregtech:machine:505" );
+
+//Tech Tree Stages
+mods.recipestages.Recipes.setRecipeStage("Extended_Crafting", <extendedcrafting:table_basic>);
+
 //Stages Recipes
 //mods.recipestages.Recipes.setRecipeStage("IC2Fu", <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}));
 //mods.recipestages.Recipes.addShaped("IC2_Cable", "Mekanism", <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}),[[null, <ore:craftingToolWireCutter>],[null, <ore:plateCopper>]]);
@@ -91,5 +105,20 @@ ResearchTable.builder("Thermal_Expansion", cat)
   .setRewardItems(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}) * 8,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}) * 8, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}) * 8, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}) * 8, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}) * 8, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}) * 8)
   .setMaxCount(1)
   .build();
+
+// extendedcrafting
+ResearchTable.builder("Extended_Crafting", cat)
+  .setIcons(<mekanism:basicblock:8>)
+  .setTitle("Extended Crafting")
+  .setDescription("Input your description")
+  .setRequiredResearches("Unlock")
+  .setRequiredStages("Unlock")
+  .addCondition(<ore:ingotSteel> * 8, <liquid:lava> * 2000)
+  .setRewardStages("Extended_Crafting")
+  .setRewardCommands("/say \"wow, @s has Researched Extended Crafting\"")
+  .setRewardItems(<extendedcrafting:material>* 32, <extendedcrafting:material:7> * 24)
+  .setMaxCount(1)
+  .build();
+
 
 print("--- Stages.zs initialized ---");
