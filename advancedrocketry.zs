@@ -84,4 +84,4 @@ print("--- loading AdvancedRocketry.zs ---");
 		recipes.remove(item);
 	}	
 
-		print("--- AdvancedRocketry.zs initialized ---");
+print("--- AdvancedRocketry.zs initialized ---");
