@@ -5,7 +5,7 @@ print("--- loading InWorldCrafting.zs ---");
 
 //Fluid To Item
 //mods.inworldcrafting.FluidToItem.transform(IItemStack output, ILiquidStack inputFluid, IIngredient[] inputItems, @Optional boolean consume)
-mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood>, <liquid:creosote>, <ore:plankWood>);
+//mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood>, <liquid:creosote>, <ore:plankWood>);
 
 //Fluid To Fluid
 //mods.inworldcrafting.FluidToFluid.transform(ILiquidStack output, ILiquidStack inputFluid, IIngredient[] inputItems, @Optional boolean consume);
